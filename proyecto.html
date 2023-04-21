@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador | Oracle+AluraLATAM</title>
+    <link rel="icon" type="image/icon" href="./imagenes/Vector.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+    <link href="./css/reset.css" rel="stylesheet">
+    <script src="js/encriptador.js"></script>
+
+    <!-- Listado-->
+    <link rel="stylesheet" href="css/bases.css">
+    <link rel="stylesheet" href="css/1er_elemento.css">
+    <link rel="stylesheet" href="css/2do_elemento.css">
+    <link rel="stylesheet" href="css/3er_elemento.css">
+    <link rel="stylesheet" href="css/4to_elemento.css">
+
+</head>
+<body>
+    <div class="Container">
+        <div class="Container_sec">
+            <div class="Container_ter">
+                <header class="prim_elemento">
+                    <h1 class="headerPrincipal-titulo">
+                        <img src="imagenes/Logo.svg" alt="Logo de Alura">
+                        <p>| Encriptador de texto</p>
+                    </h1>
+                </header>
+                <div class="seg_elemento">
+                    <div class="indicacion">
+                        <img class="exclamacion" src="./imagenes/exclamation.svg" alt="signo de exclamación">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <textarea class="text-area" id="inputTexto" placeholder="Ingrese el texto aquí" cols="20" rows="10" required></textarea>
+                    <fieldset class="botones">
+                        <button type="button" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button type="button" class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="ter_elemento">
+                <div class="mensaje" id="msj">
+                    <img class="personaje" src="./imagenes/personaje.png" alt="personaje">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="resultado" id="output">
+                    <textarea class="output-text" id="textArea" cols="15" rows="8"></textarea>
+                    <input class="btnCopiar" id="enlace" type="button" value="Copiar" onclick="copyToClipBoard()">  
+                </div>   
+            </div>
+        </div>
+        <div class="cuarto_elem">
+            <h2>Cindy Raquel Barajas Aguado | </h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/cindy-raquel/"><img src="./imagenes/linkedin.png" alt="LinkedIn de Cindy"></a>
+                <a href="https://github.com/CindyRaquel"><img src="./imagenes/github.jpg" alt="Github de Cindy"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
